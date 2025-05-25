@@ -1,4 +1,59 @@
-print("✅ Security verification passed. Loading Lxghtshit...");
+-- local function v0()
+-- 	warn("❌ This script must only be executed from the offical Lxght loader");
+-- 	return;
+-- end
+-- local v1 = game:GetService("HttpService");
+-- local v2 = "YourSecretSecondaryToken";
+-- local function v3(v81, v82)
+-- 	return v1:UrlEncode(v81   .. v82 );
+-- end
+-- if ( not _G._secondaryData or  not _G._secondaryData.nonce or  not _G._secondaryData.timestamp or  not _G._secondaryData.signature or  not _G._secondaryData.userKey or  not _G.__userKey) then
+-- 	local v226 = 0;
+-- 	while true do
+-- 		if (v226 == (470 - (159 + 310))) then
+-- 			return;
+-- 		end
+-- 		if (v226 == 0) then
+-- 			print("❌ Security verification failed: missing token data or user key.");
+-- 			v0();
+-- 			v226 = 2 - 1 ;
+-- 		end
+-- 	end
+-- end
+-- if (_G._secondaryData.userKey ~= _G.__userKey) then
+-- 	local v227 = 935 - (39 + 896) ;
+-- 	while true do
+-- 		if (v227 == (0 - 0)) then
+-- 			print("❌ Security verification failed: user key mismatch.");
+-- 			return;
+-- 		end
+-- 	end
+-- end
+-- local v4 = _G._secondaryData.nonce   .. ":"   .. _G._secondaryData.timestamp   .. ":"   .. _G.__userKey ;
+-- local v5 = v3(v4, v2);
+-- if (v5 ~= _G._secondaryData.signature) then
+-- 	local v228 = 0 - 0 ;
+-- 	while true do
+-- 		if (v228 == 0) then
+-- 			print("❌ Security verification failed: token signature mismatch.");
+-- 			return;
+-- 		end
+-- 	end
+-- end
+-- local v6 = 300;
+-- local v7 = os.time();
+-- if (math.abs(v7 - tonumber(_G._secondaryData.timestamp) ) > v6) then
+-- 	local v229 = 0;
+-- 	while true do
+-- 		if (v229 == 0) then
+-- 			print("❌ Security verification failed: token expired.");
+-- 			return;
+-- 		end
+-- 	end
+-- end
+-- _G._secondaryData = nil;
+-- _G.__userKey = nil;
+print("✅ Security verification passed. Loading Lxght...");
 local v8 = loadstring(game:HttpGet("https://sirius.menu/rayfield"))();
 local v9 = {
 	Flags = {},
@@ -303,16 +358,16 @@ local v9 = {
 	}
 };
 local v10 = v8:CreateWindow({
-	Name = "Dead Rails | Lxght sexc hub",
+	Name = "Dead Rails | Lxght Dead Rails",
 	Icon = 0 - 0 ,
 	LoadingTitle = "Loading Dead Rails",
-	LoadingSubtitle = "Lxght sexc hub | DEAD RAILS NIGGA",
+	LoadingSubtitle = "Lxght Hub",
 	Theme = "Amethyst",
 	DisableRayfieldPrompts = false,
 	DisableBuildWarnings = false,
 	ConfigurationSaving = {
 		Enabled = true,
-		FolderName = "LxghtHub",
+		FolderName = "Lxght Hub",
 		FileName = "DeadRails"
 	}
 });
